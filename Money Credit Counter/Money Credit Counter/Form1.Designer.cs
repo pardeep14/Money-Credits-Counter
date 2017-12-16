@@ -75,6 +75,7 @@
             this.txt100pEnt = new System.Windows.Forms.TextBox();
             this.txt200pEnt = new System.Windows.Forms.TextBox();
             this.txt1pEnt = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -126,6 +127,7 @@
             this.btn5p.TabIndex = 6;
             this.btn5p.TabStop = false;
             this.btn5p.UseVisualStyleBackColor = true;
+            this.btn5p.Click += new System.EventHandler(this.btn5p_Click);
             // 
             // btn10p
             // 
@@ -138,6 +140,7 @@
             this.btn10p.TabIndex = 7;
             this.btn10p.TabStop = false;
             this.btn10p.UseVisualStyleBackColor = true;
+            this.btn10p.Click += new System.EventHandler(this.btn10p_Click);
             // 
             // btn20p
             // 
@@ -150,6 +153,7 @@
             this.btn20p.TabIndex = 8;
             this.btn20p.TabStop = false;
             this.btn20p.UseVisualStyleBackColor = true;
+            this.btn20p.Click += new System.EventHandler(this.btn20p_Click);
             // 
             // btn50p
             // 
@@ -162,6 +166,7 @@
             this.btn50p.TabIndex = 9;
             this.btn50p.TabStop = false;
             this.btn50p.UseVisualStyleBackColor = true;
+            this.btn50p.Click += new System.EventHandler(this.btn50p_Click);
             // 
             // btn100p
             // 
@@ -174,6 +179,7 @@
             this.btn100p.TabIndex = 10;
             this.btn100p.TabStop = false;
             this.btn100p.UseVisualStyleBackColor = true;
+            this.btn100p.Click += new System.EventHandler(this.btn100p_Click);
             // 
             // btn200p
             // 
@@ -186,6 +192,7 @@
             this.btn200p.TabIndex = 11;
             this.btn200p.TabStop = false;
             this.btn200p.UseVisualStyleBackColor = true;
+            this.btn200p.Click += new System.EventHandler(this.btn200p_Click);
             // 
             // pictureBox3
             // 
@@ -655,11 +662,25 @@
             this.txt1pEnt.TabStop = false;
             this.txt1pEnt.Text = "0";
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Orange;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.824F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnReset.Location = new System.Drawing.Point(19, 799);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(416, 53);
+            this.btnReset.TabIndex = 41;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 872);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox4);
@@ -739,6 +760,7 @@
         private System.Windows.Forms.TextBox txt100pEnt;
         private System.Windows.Forms.TextBox txt200pEnt;
         private System.Windows.Forms.TextBox txt1pEnt;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 
