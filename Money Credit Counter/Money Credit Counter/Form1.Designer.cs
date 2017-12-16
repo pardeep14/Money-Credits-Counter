@@ -48,9 +48,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtboxTotalVPnc = new System.Windows.Forms.TextBox();
+            this.txtTotalVPnc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtboxTotalVPnd = new System.Windows.Forms.TextBox();
+            this.txtTotalVPnd = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -61,20 +61,20 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtCurrentCredits = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCostPerCredit = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtboxCostPerCredit = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtboxCurrentCredits = new System.Windows.Forms.TextBox();
-            this.txt1pEnt = new System.Windows.Forms.TextBox();
-            this.txt200pEnt = new System.Windows.Forms.TextBox();
-            this.txt100pEnt = new System.Windows.Forms.TextBox();
-            this.txt50pEnt = new System.Windows.Forms.TextBox();
-            this.txt20pEnt = new System.Windows.Forms.TextBox();
-            this.txt10pEnt = new System.Windows.Forms.TextBox();
-            this.txt5pEnt = new System.Windows.Forms.TextBox();
             this.txt2pEnt = new System.Windows.Forms.TextBox();
+            this.txt5pEnt = new System.Windows.Forms.TextBox();
+            this.txt10pEnt = new System.Windows.Forms.TextBox();
+            this.txt20pEnt = new System.Windows.Forms.TextBox();
+            this.txt50pEnt = new System.Windows.Forms.TextBox();
+            this.txt100pEnt = new System.Windows.Forms.TextBox();
+            this.txt200pEnt = new System.Windows.Forms.TextBox();
+            this.txt1pEnt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -100,6 +100,7 @@
             this.btn2p.TabIndex = 2;
             this.btn2p.TabStop = false;
             this.btn2p.UseVisualStyleBackColor = true;
+            this.btn2p.Click += new System.EventHandler(this.btn2p_Click);
             // 
             // btn1p
             // 
@@ -112,6 +113,7 @@
             this.btn1p.TabIndex = 1;
             this.btn1p.TabStop = false;
             this.btn1p.UseVisualStyleBackColor = true;
+            this.btn1p.Click += new System.EventHandler(this.btn1p_Click);
             // 
             // btn5p
             // 
@@ -290,19 +292,19 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "£";
             // 
-            // txtboxTotalVPnc
+            // txtTotalVPnc
             // 
-            this.txtboxTotalVPnc.BackColor = System.Drawing.Color.White;
-            this.txtboxTotalVPnc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxTotalVPnc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxTotalVPnc.Location = new System.Drawing.Point(133, 566);
-            this.txtboxTotalVPnc.Name = "txtboxTotalVPnc";
-            this.txtboxTotalVPnc.ReadOnly = true;
-            this.txtboxTotalVPnc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtboxTotalVPnc.Size = new System.Drawing.Size(66, 24);
-            this.txtboxTotalVPnc.TabIndex = 26;
-            this.txtboxTotalVPnc.TabStop = false;
-            this.txtboxTotalVPnc.Text = "0.00";
+            this.txtTotalVPnc.BackColor = System.Drawing.Color.White;
+            this.txtTotalVPnc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalVPnc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalVPnc.Location = new System.Drawing.Point(133, 566);
+            this.txtTotalVPnc.Name = "txtTotalVPnc";
+            this.txtTotalVPnc.ReadOnly = true;
+            this.txtTotalVPnc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtTotalVPnc.Size = new System.Drawing.Size(66, 24);
+            this.txtTotalVPnc.TabIndex = 26;
+            this.txtTotalVPnc.TabStop = false;
+            this.txtTotalVPnc.Text = "0";
             // 
             // label6
             // 
@@ -315,19 +317,19 @@
             this.label6.TabIndex = 27;
             this.label6.Text = "p";
             // 
-            // txtboxTotalVPnd
+            // txtTotalVPnd
             // 
-            this.txtboxTotalVPnd.BackColor = System.Drawing.Color.White;
-            this.txtboxTotalVPnd.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxTotalVPnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxTotalVPnd.Location = new System.Drawing.Point(273, 564);
-            this.txtboxTotalVPnd.Name = "txtboxTotalVPnd";
-            this.txtboxTotalVPnd.ReadOnly = true;
-            this.txtboxTotalVPnd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtboxTotalVPnd.Size = new System.Drawing.Size(66, 24);
-            this.txtboxTotalVPnd.TabIndex = 28;
-            this.txtboxTotalVPnd.TabStop = false;
-            this.txtboxTotalVPnd.Text = "0.00";
+            this.txtTotalVPnd.BackColor = System.Drawing.Color.White;
+            this.txtTotalVPnd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalVPnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalVPnd.Location = new System.Drawing.Point(273, 564);
+            this.txtTotalVPnd.Name = "txtTotalVPnd";
+            this.txtTotalVPnd.ReadOnly = true;
+            this.txtTotalVPnd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtTotalVPnd.Size = new System.Drawing.Size(66, 24);
+            this.txtTotalVPnd.TabIndex = 28;
+            this.txtTotalVPnd.TabStop = false;
+            this.txtTotalVPnd.Text = "0.00";
             // 
             // label7
             // 
@@ -424,17 +426,17 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(7, 47);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(247, 24);
+            this.label15.Size = new System.Drawing.Size(260, 25);
             this.label15.TabIndex = 37;
             this.label15.Text = "Enter the Cost Per Credit:";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Orange;
-            this.groupBox1.Controls.Add(this.txtboxCurrentCredits);
+            this.groupBox1.Controls.Add(this.txtCurrentCredits);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtboxCostPerCredit);
+            this.groupBox1.Controls.Add(this.txtCostPerCredit);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(19, 649);
@@ -444,12 +446,58 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Credits";
             // 
+            // txtCurrentCredits
+            // 
+            this.txtCurrentCredits.BackColor = System.Drawing.Color.Orange;
+            this.txtCurrentCredits.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCurrentCredits.Location = new System.Drawing.Point(334, 85);
+            this.txtCurrentCredits.Name = "txtCurrentCredits";
+            this.txtCurrentCredits.ReadOnly = true;
+            this.txtCurrentCredits.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtCurrentCredits.Size = new System.Drawing.Size(53, 24);
+            this.txtCurrentCredits.TabIndex = 40;
+            this.txtCurrentCredits.TabStop = false;
+            this.txtCurrentCredits.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Orange;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(290, 25);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Credits You Presently Have: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Orange;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(389, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(25, 25);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "p";
+            // 
+            // txtCostPerCredit
+            // 
+            this.txtCostPerCredit.AcceptsReturn = true;
+            this.txtCostPerCredit.AcceptsTab = true;
+            this.txtCostPerCredit.Location = new System.Drawing.Point(329, 40);
+            this.txtCostPerCredit.Name = "txtCostPerCredit";
+            this.txtCostPerCredit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtCostPerCredit.Size = new System.Drawing.Size(60, 31);
+            this.txtCostPerCredit.TabIndex = 38;
+            this.txtCostPerCredit.Text = "0.00";
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.txtboxTotalVPnd);
+            this.groupBox2.Controls.Add(this.txtTotalVPnd);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtboxTotalVPnc);
+            this.groupBox2.Controls.Add(this.txtTotalVPnc);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.btn200p);
@@ -503,129 +551,18 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Coins Entered";
             // 
-            // txtboxCostPerCredit
+            // txt2pEnt
             // 
-            this.txtboxCostPerCredit.AcceptsReturn = true;
-            this.txtboxCostPerCredit.AcceptsTab = true;
-            this.txtboxCostPerCredit.Location = new System.Drawing.Point(329, 40);
-            this.txtboxCostPerCredit.Name = "txtboxCostPerCredit";
-            this.txtboxCostPerCredit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtboxCostPerCredit.Size = new System.Drawing.Size(60, 31);
-            this.txtboxCostPerCredit.TabIndex = 38;
-            this.txtboxCostPerCredit.Text = "0.00";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Orange;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(389, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 25);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "p";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Orange;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(276, 24);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Credits You Presently Have: ";
-            // 
-            // txtboxCurrentCredits
-            // 
-            this.txtboxCurrentCredits.BackColor = System.Drawing.Color.Orange;
-            this.txtboxCurrentCredits.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxCurrentCredits.Location = new System.Drawing.Point(334, 85);
-            this.txtboxCurrentCredits.Name = "txtboxCurrentCredits";
-            this.txtboxCurrentCredits.ReadOnly = true;
-            this.txtboxCurrentCredits.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtboxCurrentCredits.Size = new System.Drawing.Size(53, 24);
-            this.txtboxCurrentCredits.TabIndex = 40;
-            this.txtboxCurrentCredits.TabStop = false;
-            this.txtboxCurrentCredits.Text = "0";
-            // 
-            // txt1pEnt
-            // 
-            this.txt1pEnt.BackColor = System.Drawing.Color.White;
-            this.txt1pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt1pEnt.Location = new System.Drawing.Point(39, 62);
-            this.txt1pEnt.Name = "txt1pEnt";
-            this.txt1pEnt.ReadOnly = true;
-            this.txt1pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt1pEnt.Size = new System.Drawing.Size(45, 32);
-            this.txt1pEnt.TabIndex = 37;
-            this.txt1pEnt.TabStop = false;
-            this.txt1pEnt.Text = "0";
-            // 
-            // txt200pEnt
-            // 
-            this.txt200pEnt.BackColor = System.Drawing.Color.White;
-            this.txt200pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt200pEnt.Location = new System.Drawing.Point(39, 760);
-            this.txt200pEnt.Name = "txt200pEnt";
-            this.txt200pEnt.ReadOnly = true;
-            this.txt200pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt200pEnt.Size = new System.Drawing.Size(45, 32);
-            this.txt200pEnt.TabIndex = 38;
-            this.txt200pEnt.TabStop = false;
-            this.txt200pEnt.Text = "0";
-            // 
-            // txt100pEnt
-            // 
-            this.txt100pEnt.BackColor = System.Drawing.Color.White;
-            this.txt100pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt100pEnt.Location = new System.Drawing.Point(39, 657);
-            this.txt100pEnt.Name = "txt100pEnt";
-            this.txt100pEnt.ReadOnly = true;
-            this.txt100pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt100pEnt.Size = new System.Drawing.Size(45, 32);
-            this.txt100pEnt.TabIndex = 39;
-            this.txt100pEnt.TabStop = false;
-            this.txt100pEnt.Text = "0";
-            // 
-            // txt50pEnt
-            // 
-            this.txt50pEnt.BackColor = System.Drawing.Color.White;
-            this.txt50pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt50pEnt.Location = new System.Drawing.Point(39, 553);
-            this.txt50pEnt.Name = "txt50pEnt";
-            this.txt50pEnt.ReadOnly = true;
-            this.txt50pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt50pEnt.Size = new System.Drawing.Size(45, 32);
-            this.txt50pEnt.TabIndex = 40;
-            this.txt50pEnt.TabStop = false;
-            this.txt50pEnt.Text = "0";
-            // 
-            // txt20pEnt
-            // 
-            this.txt20pEnt.BackColor = System.Drawing.Color.White;
-            this.txt20pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt20pEnt.Location = new System.Drawing.Point(39, 451);
-            this.txt20pEnt.Name = "txt20pEnt";
-            this.txt20pEnt.ReadOnly = true;
-            this.txt20pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt20pEnt.Size = new System.Drawing.Size(45, 32);
-            this.txt20pEnt.TabIndex = 41;
-            this.txt20pEnt.TabStop = false;
-            this.txt20pEnt.Text = "0";
-            // 
-            // txt10pEnt
-            // 
-            this.txt10pEnt.BackColor = System.Drawing.Color.White;
-            this.txt10pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt10pEnt.Location = new System.Drawing.Point(39, 354);
-            this.txt10pEnt.Name = "txt10pEnt";
-            this.txt10pEnt.ReadOnly = true;
-            this.txt10pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt10pEnt.Size = new System.Drawing.Size(45, 32);
-            this.txt10pEnt.TabIndex = 42;
-            this.txt10pEnt.TabStop = false;
-            this.txt10pEnt.Text = "0";
+            this.txt2pEnt.BackColor = System.Drawing.Color.White;
+            this.txt2pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt2pEnt.Location = new System.Drawing.Point(39, 154);
+            this.txt2pEnt.Name = "txt2pEnt";
+            this.txt2pEnt.ReadOnly = true;
+            this.txt2pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt2pEnt.Size = new System.Drawing.Size(45, 32);
+            this.txt2pEnt.TabIndex = 44;
+            this.txt2pEnt.TabStop = false;
+            this.txt2pEnt.Text = "0";
             // 
             // txt5pEnt
             // 
@@ -640,18 +577,83 @@
             this.txt5pEnt.TabStop = false;
             this.txt5pEnt.Text = "0";
             // 
-            // txt2pEnt
+            // txt10pEnt
             // 
-            this.txt2pEnt.BackColor = System.Drawing.Color.White;
-            this.txt2pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt2pEnt.Location = new System.Drawing.Point(39, 154);
-            this.txt2pEnt.Name = "txt2pEnt";
-            this.txt2pEnt.ReadOnly = true;
-            this.txt2pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt2pEnt.Size = new System.Drawing.Size(45, 32);
-            this.txt2pEnt.TabIndex = 44;
-            this.txt2pEnt.TabStop = false;
-            this.txt2pEnt.Text = "0";
+            this.txt10pEnt.BackColor = System.Drawing.Color.White;
+            this.txt10pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt10pEnt.Location = new System.Drawing.Point(39, 354);
+            this.txt10pEnt.Name = "txt10pEnt";
+            this.txt10pEnt.ReadOnly = true;
+            this.txt10pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt10pEnt.Size = new System.Drawing.Size(45, 32);
+            this.txt10pEnt.TabIndex = 42;
+            this.txt10pEnt.TabStop = false;
+            this.txt10pEnt.Text = "0";
+            // 
+            // txt20pEnt
+            // 
+            this.txt20pEnt.BackColor = System.Drawing.Color.White;
+            this.txt20pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt20pEnt.Location = new System.Drawing.Point(39, 451);
+            this.txt20pEnt.Name = "txt20pEnt";
+            this.txt20pEnt.ReadOnly = true;
+            this.txt20pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt20pEnt.Size = new System.Drawing.Size(45, 32);
+            this.txt20pEnt.TabIndex = 41;
+            this.txt20pEnt.TabStop = false;
+            this.txt20pEnt.Text = "0";
+            // 
+            // txt50pEnt
+            // 
+            this.txt50pEnt.BackColor = System.Drawing.Color.White;
+            this.txt50pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt50pEnt.Location = new System.Drawing.Point(39, 553);
+            this.txt50pEnt.Name = "txt50pEnt";
+            this.txt50pEnt.ReadOnly = true;
+            this.txt50pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt50pEnt.Size = new System.Drawing.Size(45, 32);
+            this.txt50pEnt.TabIndex = 40;
+            this.txt50pEnt.TabStop = false;
+            this.txt50pEnt.Text = "0";
+            // 
+            // txt100pEnt
+            // 
+            this.txt100pEnt.BackColor = System.Drawing.Color.White;
+            this.txt100pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt100pEnt.Location = new System.Drawing.Point(39, 657);
+            this.txt100pEnt.Name = "txt100pEnt";
+            this.txt100pEnt.ReadOnly = true;
+            this.txt100pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt100pEnt.Size = new System.Drawing.Size(45, 32);
+            this.txt100pEnt.TabIndex = 39;
+            this.txt100pEnt.TabStop = false;
+            this.txt100pEnt.Text = "0";
+            // 
+            // txt200pEnt
+            // 
+            this.txt200pEnt.BackColor = System.Drawing.Color.White;
+            this.txt200pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt200pEnt.Location = new System.Drawing.Point(39, 760);
+            this.txt200pEnt.Name = "txt200pEnt";
+            this.txt200pEnt.ReadOnly = true;
+            this.txt200pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt200pEnt.Size = new System.Drawing.Size(45, 32);
+            this.txt200pEnt.TabIndex = 38;
+            this.txt200pEnt.TabStop = false;
+            this.txt200pEnt.Text = "0";
+            // 
+            // txt1pEnt
+            // 
+            this.txt1pEnt.BackColor = System.Drawing.Color.White;
+            this.txt1pEnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt1pEnt.Location = new System.Drawing.Point(39, 62);
+            this.txt1pEnt.Name = "txt1pEnt";
+            this.txt1pEnt.ReadOnly = true;
+            this.txt1pEnt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt1pEnt.Size = new System.Drawing.Size(45, 32);
+            this.txt1pEnt.TabIndex = 37;
+            this.txt1pEnt.TabStop = false;
+            this.txt1pEnt.Text = "0";
             // 
             // Form1
             // 
@@ -710,9 +712,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtboxTotalVPnc;
+        private System.Windows.Forms.TextBox txtTotalVPnc;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtboxTotalVPnd;
+        private System.Windows.Forms.TextBox txtTotalVPnd;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -726,8 +728,8 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtboxCostPerCredit;
-        private System.Windows.Forms.TextBox txtboxCurrentCredits;
+        private System.Windows.Forms.TextBox txtCostPerCredit;
+        private System.Windows.Forms.TextBox txtCurrentCredits;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt2pEnt;
         private System.Windows.Forms.TextBox txt5pEnt;
